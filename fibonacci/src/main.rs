@@ -9,7 +9,7 @@ fn main() {
         io::stdin().read_line(&mut n)
             .expect("Failed to read line");
 
-        if n == "break\n"{
+        if n == "exit\n"{
             break;
         }
         
@@ -18,7 +18,7 @@ fn main() {
             Err(_) => continue,
         };
 
-        let x: u64= fibonacci(&n);
+        let x: u128= fibonacci(&n);
 
         if 10<=n && n<=19{
             println!("The {}th number is: {}", n, x);
@@ -34,13 +34,13 @@ fn main() {
     }
 }
 
-fn fibonacci(&n: &u32) -> u64 {
-    let mut a: u64 = 1;
-    let mut b: u64 = 1;
+fn fibonacci(&n: &u32) -> u128 {
+    let mut a: u128 = 1;
+    let mut b: u128 = 1;
     
     
     if n >= 3 {
-        let mut c: u64;
+        let mut c: u128;
         for _number in 3..=n{
             c = a + b;
             a = b;
