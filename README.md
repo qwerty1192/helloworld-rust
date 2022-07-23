@@ -1,2 +1,2 @@
 # helloworld-rust
-Rustの(汚い)お勉強机
+Rustの(汚)勉強机
