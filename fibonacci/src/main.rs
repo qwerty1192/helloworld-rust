@@ -20,7 +20,7 @@ fn main() {
 
         let x: u128= fibonacci(&n);
 
-        if 10<=n && n<=19{
+        if (10..=19).contains(&n){
             println!("The {}th number is: {}", n, x);
         }else if n%10 == 1{
             println!("The {}st number is: {}", n, x);
